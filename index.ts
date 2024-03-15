@@ -8,7 +8,7 @@ var schema = buildSchema(`
 
 var rootValue = { hello: () => "Hello world!" };
 
-var source = "{ hello }";
+var source = "{ hello world}";
 
 graphql({ schema, source, rootValue }).then((response) => {
   console.log(response);
